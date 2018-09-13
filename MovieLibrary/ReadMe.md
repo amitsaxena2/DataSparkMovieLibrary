@@ -18,6 +18,6 @@ http://localhost:8080/MovieLibrary/rest/movie/relatedMovies/<Movie Name>
 4. The Admin should have an option to update movie tags
 http://localhost:8080/MovieLibrary/rest/movie/updateMovie/ 
 
-Sample Request Object 
+  Sample Request Object 
 
-{"name":"Black Panther","director":"Ryan Coogler","yearOfProduction":2018,"noOfAwards":0,"actors":["Chadwick Boseman","Lupita Nyong\u0027o","Danai Gurira","Michael B. Jordan"],"tags":["action","sci-fi","adventure","marvel","horror"]}
+  {"name":"Black Panther","director":"Ryan Coogler","yearOfProduction":2018,"noOfAwards":0,"actors":["Chadwick Boseman","Lupita Nyong\u0027o","Danai Gurira","Michael B. Jordan"],"tags":["action","sci-fi","adventure","marvel","horror"]}
