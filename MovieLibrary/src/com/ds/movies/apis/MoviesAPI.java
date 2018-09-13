@@ -64,13 +64,6 @@ public class MoviesAPI {
 	 * {"name":"Black Panther","director":"Ryan Coogler","yearOfProduction":2018,"noOfAwards":0,"actors":["Chadwick Boseman","Lupita Nyong\u0027o","Danai Gurira","Michael B. Jordan"],"tags":["action","sci-fi","adventure","marvel","horror"]}
 	 */
 	public String updateMovie(@Context HttpHeaders headers,String movieJson) {
-		if (headers != null) {
-	       for (String header : headers.getRequestHeaders().keySet()) {
-	          System.out.println("Header:"+header+
-	                             "Value:"+headers.getRequestHeader(header));
-	       }
-	   }
-		System.out.println(headers.getRequestHeader("authtoken"));
 		if(headers.getRequestHeader("authtoken").toString().replace("[", "").replace("]", "").equalsIgnoreCase("amitsaxena")) {
 			MovieHelper movieHelper = new MovieHelper();
 			return new Gson().toJson(movieHelper.updateMovie(new Gson().fromJson(movieJson, Movie.class)));
