@@ -6,6 +6,16 @@ API End-Points are contained in the class /MovieLibrary/src/com/ds/movies/apis/M
 
 Code contains a POJO called Movie in class /MovieLibrary/src/com/ds/movies/helpers/Movie.java
 
+Data Source Files
+
+The AIP refers to the two data source files that should be located at the following locations:
+
+Movie Details File: System.getProperty("user.home")+"/dsfiles/MovieDetails.txt"
+and 
+Tags File: System.getProperty("user.home")+"/dsfiles/TagFile.txt"
+
+API Details
+
 1. GET movie details API (i.e. given movie name return details)
 http://localhost:8080/MovieLibrary/rest/movie/<Movie Name>
 
